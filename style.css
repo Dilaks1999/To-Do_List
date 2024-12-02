@@ -1,0 +1,202 @@
+/* General reset and body setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    margin: 0;
+}
+
+/* Container for the to-do app */
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Header for the app */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+/* Styling the input section */
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+/* Styling inputs */
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Styling the date and time input fields */
+input[type="date"],
+input[type="time"] {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for date and time input fields */
+input[type="date"]:hover,
+input[type="time"]:hover {
+    background-color: #e0f7fa; /* Light blue background on hover */
+    border-color: #4CAF50; /* Green border color */
+}
+
+/* Focus effect for date and time input fields */
+input[type="date"]:focus,
+input[type="time"]:focus {
+    border-color: #4CAF50; /* Green border when focused */
+    background-color: #f1f8f6; /* Light green background when focused */
+}
+
+/* Focus effect for inputs */
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
+    border-color: #4CAF50;
+}
+
+/* Styling the to-do list */
+ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+}
+
+/* Styling each task item */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 12px;
+    border-radius: 4px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for task items */
+li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styling completed tasks */
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Delete button style */
+button.delete {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button.delete:hover {
+    background-color: #c0392b;
+}
+
+/* Priority button styling */
+.priority {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+}
+
+.priority.low {
+    background-color: #f1c40f;
+}
+
+.priority.medium {
+    background-color: #f39c12;
+}
+
+.priority.high {
+    background-color: #e74c3c;
+}
+
+/* Button container below the to-do list */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* General button style */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for general buttons */
+button:hover {
+    background-color: #45a049;
+}
+
+
+select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus effect for the select element */
+select:focus {
+    border-color: #4CAF50;
+}
